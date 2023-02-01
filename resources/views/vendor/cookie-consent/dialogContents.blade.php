@@ -3,7 +3,7 @@
         <div class="js-cookie-consent cookie-consent py-2 px-4 shadow-lg">
 
             <span class="cookie-consent__message">
-                Your experience on this site will be improved by allowing <a class="text-red-300" href="{{ route('privacy') }}">cookies</a>
+                Your experience on this site will be improved by allowing <a class="text-red-300" href="#">cookies</a>
             </span>
 
             <button class="text-white px-1 js-cookie-consent-agree cookie-consent__agree ml-5">
