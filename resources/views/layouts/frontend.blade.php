@@ -15,24 +15,7 @@
     @endif
 </head>
 <body class="flex flex-col w-full min-h-screen font-sans antialiased text-gray-900">
-@if(!config('larabug.minimal_frontend'))
-<div class="relative bg-red-700">
-    <div class="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
-        <div class="pr-16 sm:text-center sm:px-16">
-            <p class="font-medium text-white">
-                <span>
-                  LaraBug is free!
-                </span>
-                <span class="block sm:ml-2 sm:inline-block">
-                  <a href="https://github.com/sponsors/Cannonb4ll" class="text-white font-bold underline">
-                      Support the development &rarr;
-                  </a>
-                </span>
-            </p>
-        </div>
-    </div>
-</div>
-@endif
+
 
 @if(!config('larabug.minimal_frontend'))
 @include('frontend.partials.header')
