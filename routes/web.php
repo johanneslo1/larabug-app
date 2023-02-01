@@ -13,7 +13,7 @@ use App\Http\Controllers\Profile\ProfileController;
 Route::permanentRedirect('dashboard', 'panel');
 
 
-Route::get('/', [PageController::class, 'home'])->name('home')->middleware('minimal');
+Route::redirect('/', '/login')->name('home');
 
 //Route::group([
 //    'middleware' => [
