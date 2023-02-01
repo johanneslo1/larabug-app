@@ -7,10 +7,7 @@
                 <span class="text-primary-500">Bug</span>
             </a>
             <nav class="flex h-full items-center text-gray-600">
-                <a class="mr-8 @if(request()->is('/')) text-primary-500 @endif" href="/">Home</a>
-                <a class="mr-8 @if(request()->is('features')) text-primary-500 @endif" href="{{ route('features') }}">Features</a>
-                <a class="mr-8 @if(request()->is('pricing')) text-primary-500 @endif" href="{{ route('pricing') }}">Pricing</a>
-                <a class="mr-8 @if(request()->is('docs*')) text-primary-500 @endif" href="{{ route('docs.show', ['general', 'welcome']) }}">Docs</a>
+
                 @guest
                     <a class="mr-8 @if(request()->is('login')) text-primary-500 @endif" href="{{ route('login') }}">Login</a>
                 @endguest
@@ -21,14 +18,14 @@
                     </a>
                 @endauth
             </nav>
-            @guest
-                @if(config('auth.register_enabled'))
-                    <a href="{{ route('register') }}"
-                       class="flex-shrink-0 rounded shadow font-medium tracking-wider h-10 text-sm px-4 text-white inline-flex justify-center items-center text-center bg-primary-500 border border-primary-500 | focus:outline-none focus:ring focus:ring-primary-200 | hover:bg-primary-400">
-                        Start
-                    </a>
-                @endif
-            @endguest
+{{--            @guest--}}
+{{--                @if(config('auth.register_enabled'))--}}
+{{--                    <a href="{{ route('register') }}"--}}
+{{--                       class="flex-shrink-0 rounded shadow font-medium tracking-wider h-10 text-sm px-4 text-white inline-flex justify-center items-center text-center bg-primary-500 border border-primary-500 | focus:outline-none focus:ring focus:ring-primary-200 | hover:bg-primary-400">--}}
+{{--                        Start--}}
+{{--                    </a>--}}
+{{--                @endif--}}
+{{--            @endguest--}}
         </div>
     </div>
 </header>
